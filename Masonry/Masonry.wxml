@@ -1,0 +1,16 @@
+<view class='masonry'>
+  <view class='masonry-column' style='margin-right:{{columnSpace}}'>
+    <view class='column-inner' id='left'>
+      <block wx:for="{{_list}}" wx:key="{{index}}">
+        <masonry-item wx:if="{{item._columnPosition === 'left'}}" item="{{item}}"></masonry-item>
+      </block>
+    </view>
+  </view>
+  <view class='masonry-column'>
+    <view class='column-inner' id='right'>
+      <block wx:for="{{_list}}" wx:key="{{index}}">
+        <masonry-item wx:if="{{item._columnPosition === 'right'}}" item="{{item}}"></masonry-item>
+      </block>
+    </view>
+  </view>
+</view>

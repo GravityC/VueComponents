@@ -1,0 +1,9 @@
+.masonry{
+  width:100%;
+  display: flex;
+  box-sizing: border-box;
+}
+
+.masonry-column{
+  flex:1;
+}
